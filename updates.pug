@@ -1,0 +1,18 @@
+html(lang="en")
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        a(href="/") Return to the homepage
+        .form-wrapper
+            form(method="POST")
+                label(for="make") New make
+                input(type="text" name="make" required)
+                label(for="VIN") New VIN
+                input(type="text" name="vin" required)
+                label(for="model") New model
+                input(type="text" name="model" required)
+                label(for="year") New year
+                input(type="text" name="year" required)
+                input(type="submit" value="Submit")
